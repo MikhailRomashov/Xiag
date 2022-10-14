@@ -35,6 +35,7 @@ class ProjectController
         } catch (Model\NotFoundException $e) {
             return new Response('Not found', 404);
         } catch (\Throwable $e) {
+//CodeReview : сменить описание и код ошибки на 400		
             return new Response('Something went wrong', 500);
         }
     }
